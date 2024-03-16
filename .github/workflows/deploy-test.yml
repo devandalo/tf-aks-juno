@@ -5,4 +5,4 @@ on:
 
 jobs:
   test-rw:
-    uses: devandalo/tf-workflows-luna/.github/workflows/deploy-infra-tmpl.yml@main
+    uses: devandalo/tf-workflows-juno/.github/workflows/deploy-infra-tmpl.yml@main
