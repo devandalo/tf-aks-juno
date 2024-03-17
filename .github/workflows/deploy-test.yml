@@ -3,6 +3,10 @@ name: deploy test
 on:
   workflow_dispatch:
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   test-rw:
     uses: devandalo/tf-workflows-juno/.github/workflows/deploy-infra-tmpl.yml@main
