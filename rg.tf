@@ -1,5 +1,5 @@
 module "rg" {
-  source         = "git@github.com:devandalo/tf-rg-juno.git?ref=main"
+  source         = "github.com/devandalo/tf-rg-juno?ref=main"
   location       = var.location
   location_short = var.location_short
   tags           = var.tags

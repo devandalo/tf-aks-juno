@@ -6,7 +6,10 @@ terraform {
       version = "3.96.0"
     }
   }
-  backend "azurerm" {}
+  backend "azurerm" {
+    # use_oidc         = true
+    # use_azuread_auth = true
+  }
 }
 
 provider "azurerm" {
