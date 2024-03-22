@@ -1,9 +1,11 @@
 name: deploy test
 
 on:
-  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
 
 jobs:
   test-rw:
-    uses: devandalo/tf-workflows-juno/.github/workflows/pr.yml@main
+    uses: devandalo/tf-workflows-juno/.github/workflows/pr-tmpl.yml@main
     secrets: inherit
