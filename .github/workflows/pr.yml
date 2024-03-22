@@ -1,0 +1,9 @@
+name: deploy test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-rw:
+    uses: devandalo/tf-workflows-juno/.github/workflows/pr.yml@main
+    secrets: inherit
