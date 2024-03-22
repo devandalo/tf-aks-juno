@@ -2,6 +2,13 @@ name: Deploy Infra
 
 on:
   workflow_dispatch:
+    inputs:
+      destroy:
+        description: "Destroy tf-composition?"
+        required: true
+        type: boolean
+        default: false
+
   push:
     branches:
       - main
