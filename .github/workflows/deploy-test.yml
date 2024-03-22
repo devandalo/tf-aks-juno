@@ -1,4 +1,4 @@
-name: deploy Infra
+name: Deploy Infra
 
 on:
   workflow_dispatch:
@@ -10,3 +10,5 @@ jobs:
   test-rw:
     uses: devandalo/tf-workflows-juno/.github/workflows/deploy-infra-tmpl.yml@main
     secrets: inherit
+    with:
+      environment: "lab"
