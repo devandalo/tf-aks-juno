@@ -18,4 +18,4 @@ jobs:
     secrets: inherit
     with:
       environment: "lab"
-      destroy: $(( inputs.destroy ))
+      destroy: ${{ inputs.destroy }}
