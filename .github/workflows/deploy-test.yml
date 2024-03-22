@@ -13,7 +13,7 @@ on:
       - main
 
 jobs:
-  test-rw:
+  deploy-infra:
     uses: devandalo/tf-workflows-juno/.github/workflows/deploy-infra-tmpl.yml@main
     secrets: inherit
     with:
