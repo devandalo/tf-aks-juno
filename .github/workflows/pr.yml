@@ -5,5 +5,5 @@ on:
 
 jobs:
   test-rw:
-    uses: devandalo/tf-workflows-juno/.github/workflows/pr.yml@main
+    uses: devandalo/tf-workflows-juno/.github/workflows/pr-tmpl.yml@main
     secrets: inherit
