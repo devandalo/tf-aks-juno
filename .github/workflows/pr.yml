@@ -9,3 +9,6 @@ jobs:
   test-rw:
     uses: devandalo/tf-workflows-juno/.github/workflows/pr-tmpl.yml@main
     secrets: inherit
+    with:
+      environment: "lab"
+      destroy: true
