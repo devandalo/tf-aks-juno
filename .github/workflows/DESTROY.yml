@@ -1,4 +1,5 @@
-name: DESTROY ${{ github.event.repository.name }} Infra
+name: DESTROY Infra
+run-name: DESTROY ${{ github.event.repository.name }} Infra
 
 on:
   workflow_dispatch:

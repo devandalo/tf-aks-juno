@@ -1,4 +1,5 @@
-name: Deploy ${{ github.event.repository.name }} Infra
+name: Deploy Infra
+run-name: Deploy ${{ github.event.repository.name }} Infra
 
 on:
   workflow_dispatch:
