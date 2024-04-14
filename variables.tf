@@ -49,3 +49,16 @@ variable "default_np_orchestrator_version" {
 variable "default_np_zones" {
   type = list(string)
 }
+
+variable "admin_group_object_ids" {
+  type    = list(string)
+  default = []
+}
+
+variable "acr_name" {
+  type = string
+}
+
+variable "acr_resource_group_name" {
+  type = string
+}
