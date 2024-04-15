@@ -1,12 +1,11 @@
 # global
 location       = "norwayeast"
 location_short = "noe"
-stack          = "aks"
+stack          = "aks-green"
 project        = "juno"
 environment    = "lab"
 
 # aks
-deployment_type         = "green"
 private_cluster_enabled = false
 sku_tier                = "Free"
 kubernetes_version      = "1.29"

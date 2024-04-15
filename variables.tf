@@ -6,10 +6,6 @@ variable "environment" {
   type = string
 }
 
-variable "deployment_type" {
-  type = string
-}
-
 variable "location" {
   type = string
 }

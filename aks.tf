@@ -1,8 +1,8 @@
 resource "azurerm_kubernetes_cluster" "aks" {
   resource_group_name                 = module.rg.name
   location                            = module.rg.location
-  name                                = format("aks-%s-%s-%s-%s", var.project, var.environment, var.deployment_type, var.location_short)
-  node_resource_group                 = format("rg-%s-nodes", azurerm_kubernetes_cluster.aks.name)
+  name                                = format("%s-%s-%s", var.stack, var.environment, var.location_short)
+  node_resource_group                 = format("%s-nodes", module.rg.name)
   sku_tier                            = var.sku_tier
   private_cluster_enabled             = var.private_cluster_enabled
   dns_prefix                          = var.environment
