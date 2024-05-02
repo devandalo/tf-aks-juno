@@ -1,6 +1,8 @@
 locals {
   tags = {
-    Location    = var.location
-    Environment = var.environment
+    location    = var.location
+    environment = var.environment
+    stack       = var.stack
+    project     = var.project
   }
 }

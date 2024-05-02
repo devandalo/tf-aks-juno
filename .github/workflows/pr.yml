@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  test-rw:
+  check-plan:
     uses: devandalo/tf-workflows-juno/.github/workflows/pr-tmpl.yml@main
     secrets: inherit
     with:
