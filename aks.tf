@@ -36,6 +36,7 @@ resource "azurerm_kubernetes_cluster" "aks" {
   }
 
   azure_active_directory_role_based_access_control {
+    managed                = true // deprecated and will be defaulted to true in v4.0 of the AzureRM provider
     azure_rbac_enabled     = true
     admin_group_object_ids = var.admin_group_object_ids
   }
