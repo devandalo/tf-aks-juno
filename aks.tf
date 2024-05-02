@@ -20,7 +20,7 @@ resource "azurerm_kubernetes_cluster" "aks" {
     vm_size              = var.default_np_size
     orchestrator_version = var.default_np_orchestrator_version
     zones                = var.default_np_zones
-    type                 = "VirtualMachinesScaleSets"
+    type                 = "VirtualMachineScaleSets"
     enable_auto_scaling  = true
     node_count           = 1
     min_count            = 1
