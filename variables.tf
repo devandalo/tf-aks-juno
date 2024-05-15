@@ -51,10 +51,26 @@ variable "admin_group_object_ids" {
   default = []
 }
 
-variable "acr_name" {
+# variable "acr_name" {
+#   type = string
+# }
+
+# variable "acr_resource_group_name" {
+#   type = string
+# }
+
+variable "metrics_annotations_allowlist" {
+  default = null
+}
+
+variable "metrics_labels_allowlist" {
+  default = null
+}
+
+variable "amw_name" {
   type = string
 }
 
-variable "acr_resource_group_name" {
+variable "amw_resource_group_name" {
   type = string
 }

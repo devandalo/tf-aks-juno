@@ -18,5 +18,7 @@ default_np_zones                = ["1"]
 
 
 #data
-acr_name                = "acrjunolabnoe"
-acr_resource_group_name = "rg-acr-juno-lab-noe"
+# acr_name                = "acrjunolabnoe"
+# acr_resource_group_name = "rg-acr-juno-lab-noe"
+amw_name                = "amw-juno-lab-noe"
+amw_resource_group_name = "rg-observability-juno-lab-noe"
