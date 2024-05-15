@@ -2,7 +2,7 @@ resource "azurerm_monitor_data_collection_rule" "dcr" {
   name                        = format("dce-%s", var.stack)
   resource_group_name         = module.rg.name
   location                    = module.rg.location
-  data_collection_endpoint_id = azurerm_monitor_data_collection_endpoint.aks.id
+  data_collection_endpoint_id = azurerm_monitor_data_collection_endpoint.dce.id
   kind                        = "Linux"
 
   destinations {
