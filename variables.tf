@@ -66,3 +66,11 @@ variable "metrics_annotations_allowlist" {
 variable "metrics_labels_allowlist" {
   default = null
 }
+
+variable "amw_name" {
+  type = string
+}
+
+variable "amw_resource_group_name" {
+  type = string
+}

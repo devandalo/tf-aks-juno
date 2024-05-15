@@ -41,8 +41,8 @@ resource "azurerm_kubernetes_cluster" "aks" {
     admin_group_object_ids = var.admin_group_object_ids
   }
 
-  # monitor_metrics {
-  #   annotations_allowed = var.metrics_annotations_allowlist
-  #   labels_allowed      = var.metrics_labels_allowlist
-  # }
+  monitor_metrics {
+    annotations_allowed = var.metrics_annotations_allowlist
+    labels_allowed      = var.metrics_labels_allowlist
+  }
 }
