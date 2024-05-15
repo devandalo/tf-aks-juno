@@ -26,7 +26,7 @@ resource "azurerm_monitor_data_collection_rule" "dcr" {
 
   description = "JUNO DCR for Azure Monitor Metrics Profile (Managed Prometheus)"
   depends_on = [
-    azurerm_monitor_data_collection_endpoint.dcr
+    azurerm_monitor_data_collection_endpoint.dce
   ]
 
 }
